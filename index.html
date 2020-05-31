@@ -133,18 +133,13 @@
           如何用hugo搭建个人博客  安装hugo
  在hugo release页面下载对应版本的安装包 解压并添加至环境变量 重启终端，hugo version检查是否正确配置  搭建博客
  进入hugo官网,点击Quick Start 创建新目录
-hugo new site wu585.github.io.creator
- 增加主题
+hugo new site wu585.github.io.creator  增加主题
 cd wu585.github.io.creator git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke  将主题添加至配置
-echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml
- 创建博客，并将draft的true改为false
-hugo new posts/第一篇博客.md
- 启动hugo服务器
-hugo server -D
- 修改配置：打开config.toml文件
+echo 'theme = &quot;ananke&quot;' &gt;&gt; config.toml  创建博客，并将draft的true改为false
+hugo new posts/第一篇博客.md  启动hugo服务器
+hugo server -D  修改配置：打开config.toml文件
 baseURL = &quot;https://example.org/&quot; languageCode = &quot;zh-Hans&quot; title = &quot;小吴的博客&quot; theme = &quot;ananke&quot;  创建静态页面,会生成public目录，静态页面就在此目录内
-hugo -D
-  拷贝到git
+hugo -D   拷贝到git
         </div>
           <a href="https://wu585.github.io/posts/%E7%AC%AC%E4%B8%80%E7%AF%87%E6%8A%80%E6%9C%AF%E5%8D%9A%E5%AE%A2/" class="ba b--moon-gray bg-light-gray br2 color-inherit dib f7 hover-bg-moon-gray link mt2 ph2 pv1">read more</a>
         
