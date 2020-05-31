@@ -6,10 +6,19 @@
     <description>Recent content in Posts on 任十七的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Sun, 31 May 2020 18:01:37 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 31 May 2020 18:55:49 +0800</lastBuildDate>
     
 	<atom:link href="https://wu585.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>第三篇博客</title>
+      <link>https://wu585.github.io/posts/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
+      <pubDate>Sun, 31 May 2020 18:55:49 +0800</pubDate>
+      
+      <guid>https://wu585.github.io/posts/%E7%AC%AC%E4%B8%89%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
+      <description> 如何用hugo搭建个人博客  安装hugo 打开cmder，进入一个单独的目录 hugo new site + quickstart，（注意：quickstart指的是仓库名，都要小写），会创建对应目录 cd quickstart git init git submodule add https://github.com/budparr/gohugo-theme-ananke.git themes/ananke echo &#39;theme = &amp;quot;ananke&amp;quot;&#39; &amp;gt;&amp;gt; config.toml hugo new posts/第一篇博客.md hugo server -D 此时会产生一个地址，点击进入即可看到自己的博客 在外层目录新建 .gitignore 文件，填写/public/ cd public git init git add . git commit -m 在github创建新仓库，仓库名必须是用户名，比如wu585.github.io git remote add origin git@github.com:Wu585/wu585.github.io.git git push -u origin master  此时，在github仓库对应的settings选项中，可看到一个链接，即为hugo博客的对应的链接 </description>
+    </item>
     
     <item>
       <title>第二篇博客</title>
