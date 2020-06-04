@@ -1,0 +1,116 @@
+---
+title: "HTML重点标签"
+date: 2020-06-04T22:56:55+08:00
+draft: false
+---
+# HTML常用标签
+## a标签
+1. 属性
+* href
+* target
+* download
+* rel=noopener
+2. 作用
+* 跳转外部页面
+* 跳转内部锚点
+* 跳转到邮箱或电话等
+## a的href的取值
+1. 网址
+* https://baidu.com
+* http://baidu.com
+* //baidu.com
+2. 路径
+* /a/b/c：以当前目录为根目录  或者a/b/c
+* index.html 以及 ./index.html
+3. 伪协议
+* javascript:代码;  ：可用作什么都不做，不刷新页面
+* mailto邮箱
+* tel:手机号
+4. id
+* href=#xxx：进行跳转到锚点
+## a的target的取值
+1. 内置名字
+* _blank：新页面打开
+* __top：顶层打开
+* _parent：父层级打开
+* _self：当前页面打开（默认）
+2. 程序员命名
+* window的name：可让两个页面在同一个窗口打开
+* iframe的name
+## a的download
+1. 作用
+* 不是打开页面，而是下载页面
+2. 问题
+* 不是所有浏览器都支持，尤其是手机浏览器可能不支持
+
+## iframe标签
+内嵌窗口，使用很少，只有一些老系统再用
+
+## table标签
+1. 相关的标签
+* table
+* thead
+* tbody
+* tfoot
+* tr：table row
+* td：table data
+* th
+2. 相关的样式
+* table-layout
+* border-collapse
+* border-sapcing
+
+## img标签
+1. 作用
+* 发出get请求，并展示一张图片
+2. 属性
+* alt
+* height
+* width
+* src
+3. 事件
+* onload ：加载成功
+* onerror：加载失败
+4. 响应式
+* max-width:100%
+5. 可替换元素（面试可能会问）
+
+## form标签（表单）
+1. 作用
+* 发 get 或 post 请求，然后刷新页面
+2. 属性
+* action：控制请求哪个页面，是一个路径
+* autocomplete：自动填充，配合input中的name使用，会在输入框内给出提示
+* method：控制使用 GET 还是 POST
+* target：指定哪个页面跳转至 action 下的路径，可以填 _blank 或配合 name 使用
+3. 事件
+* submit：一个 form 表单必须要有一个 type="submit"，此表单才能提交
+
+## input标签
+1. 作用
+* 让用户输入内容
+2. 属性
+* 类型type：button / checkbox：同一个name则为一组 / email / file：加一个multiple则可多选文件上传 / hidden ：用来给js自动填写信息的 / number / password / radio:同一个name则单选 / search / submit / tel  / text
+* 其他 name / autofocus / checked / disabled / maxlength / pattern / value / placeholder
+3. 事件
+* onchange：当用户输入改变时的事件
+* onfocus：当用户鼠标放上去的事件
+* onblur：鼠标出来的事件
+4. 验证器
+* HTML5新增功能：比如 required，表示改选项必须提交
+
+## 其他输入标签
+1. 标签
+* select + option ：下拉选项，value值为空的话，则为默认选项
+* textarea：多行文本  style="resize: none" 使其不可被拖动，配合width height固定大小
+* label
+2. 注意事项
+* 一般不监听 input 的 click 事件
+* form 里面的 input 要有 name
+* form 里要放一个 type=submit 才能触发submit 事件
+
+## 其他标签
+* video
+* audio
+* canvas
+* svg
